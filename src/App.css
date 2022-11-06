@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +30,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px blue solid;
+  padding: 10px;
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  list-style-type: none;
+}
+.main-header {
+  padding: 10px;
+}
+
+.main-table {
+  border: 5px lime solid;
+  margin-bottom: 10px;
+}
+
+.table {
+  border: 1px black solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+.results {
+  border: 1px black solid;
+  display: flex;
+  justify-items: auto;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.score-place {
+  display: flex;
+  align-items: auto;
+  justify-content: space-between;
+  color: red;
 }
